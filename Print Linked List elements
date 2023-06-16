@@ -1,0 +1,23 @@
+Given a linked list. Print all the elements of the linked list.
+Your task:
+You don't need to read input or print anything. Your task is to complete the function display() which takes the head of the linked list as input and prints the linked list in a single line.
+ 
+ 
+ 
+ 
+ 
+class Solution
+{
+    // Print elements of a linked list on console
+    // head pointer input could be NULL as well
+    // for empty list
+    void display(Node head)
+    {
+        //add code here.
+        Node temp=head;
+        while(temp != null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+}
