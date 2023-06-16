@@ -1,0 +1,23 @@
+Given a singly linked list. The task is to find the length of the linked list, where length is defined as the number of nodes in the linked list.
+Your Task:
+Your task is to complete the given function getCount(), which takes a head reference as an argument and should return the length of the linked list.
+
+
+
+
+class Solution
+{
+    //Function to count nodes of a linked list.
+    public static int getCount(Node head)
+    {
+        
+        //Code here
+        Node temp = head;
+        int c=0;
+        while(temp != null){
+        temp=temp.next;
+        c++;
+    }
+    return c;
+    }
+}
